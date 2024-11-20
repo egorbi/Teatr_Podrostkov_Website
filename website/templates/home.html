@@ -1,2 +1,5 @@
 {% extends "base.html" %}
-{% block title%}Changed{% endblock %}
+{% block title%}Главная{% endblock %}
+{% block styles %} <link rel="stylesheet" href = "{{ url_for('static', filename='styles.css') }}"> {% endblock %}
+{% block content %}<img src="{{ url_for('static', filename='/img/main.jpg') }}" class="img-fluid" >{% endblock %}
+{% block bg%}{% endblock %}

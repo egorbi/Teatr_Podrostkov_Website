@@ -1,0 +1,9 @@
+#background{
+    background-image: url("{{ url_for('static', filename='/img/main.jpg') }}");
+    background-color: #6f42c1;
+    height:100vh;
+}
+
+body{
+    background-color: #6f42c1;
+}
