@@ -1,9 +1,27 @@
-#background{
-    background-image: url("{{ url_for('static', filename='/img/main.jpg') }}");
-    background-color: #6f42c1;
+.bod1 {
+    background-image: url("/static/img/main.jpg"); !important
+    margin:0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
     height:100vh;
+    height:100hv;
+    width:100%;
+    background-size:cover;
+    background-position:center 20%;
+    position:fixed;
+    top:0
+    z-index:-1;
 }
 
-body{
-    background-color: #6f42c1;
+.background {
+
+
+}
+
+
+.mptp {
+    text-align:center;
+    color:white;
+
 }

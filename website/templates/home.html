@@ -1,5 +1,18 @@
 {% extends "base.html" %}
+
 {% block title%}Главная{% endblock %}
-{% block styles %} <link rel="stylesheet" href = "{{ url_for('static', filename='styles.css') }}"> {% endblock %}
-{% block content %}<img src="{{ url_for('static', filename='/img/main.jpg') }}" class="img-fluid" >{% endblock %}
-{% block bg%}{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" />
+{% endblock %}
+
+{% block content %}
+    <div class="bod1" id="first_look_11">
+        <div class="mptp">
+            <h1>Московский Педагогический Театр Подростков</h1>
+        </div>
+        <div class = "background"></div>
+    </div>
+
+
+{% endblock %}
