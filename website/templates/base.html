@@ -3,30 +3,36 @@
     <head>
         <meta charset="utf-8"/>
         <meta name = "viewport" content="width=device-width, initial-scale = 1" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}" />
         {% block styles %}{% endblock %}
         <title>{% block title %}Главная{% endblock %}</title>
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
+        <script src="https://kit.fontawesome.com/1ce25e255d.js" crossorigin="anonymous"></script>
     </head>
     <body>
-         <button class="menu-toggle" id="menuToggle">
+        <div class="nav-line">
+            <img src="static/img/logo.png" style="height:70px;width:70px;">
+            <button class="menu-toggle" id="menuToggle">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </button>
+        </div>
+
 
         <!-- Offcanvas Navbar -->
         <nav class="offcanvas" id="offcanvasNav">
             <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">Афиша</a></li>
-                <li><a href="#services">Галерея</a></li>
+                <li><a href="#home"><i class="fa-solid fa-house fa-sm"></i>Главная</a></li>
+                <li><a href="#about"><i class="fa-solid fa-calendar-days"></i>Афиша</a></li>
+                <li><a href="#services"><i class="fa-regular fa-image"></i>Галерея</a></li>
             </ul>
             <a href="https://t.me/teatr_podrostkov" target="_blank" class="tg-btn">
-                <img src="static/img/instagram.png" style="height:50px;width:50px;" alt="tg" />
+                <img src="static/img/tg.png" style="height:50px;width:50px;" alt="tg" />
             </a>
             <a href="https://instagram.com/teatr_podrostkov" target="_blank" class="inst-btn">
-                <img src="static/img/tg.png" style="height:50px;width:50px;" alt="tg" />
+                <img src="static/img/instagram.png" style="height:50px;width:50px;" alt="tg" />
             </a>
         </nav>
 

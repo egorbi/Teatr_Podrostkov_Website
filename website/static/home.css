@@ -1,122 +1,24 @@
 body{
-    margin:0;
-    background-color:grey;
-}
-
-.menu-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.menu-toggle .bar {
-    display: block;
-    width: 30px;
-    height: 4px;
-    margin: 5px auto;
-    background-color: white;
-    transition: 0.3s;
-}
-
-/* Transform bars for animation */
-.menu-toggle.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-}
-
-/* Offcanvas Navbar */
-.offcanvas {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: black;
-    color: white;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: space-between;
-}
-
-.offcanvas ul {
-    list-style: none;
-    padding: 25% 10%;
     margin: 0;
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+#background{
+    background-image: url(/static/img/main.jpg) !important;
+    height: 100vh;
     width:100%;
+    background-size:cover;
+    background-position: center center;
+    position:fixed;
+    top:0;
+    z-index: -1;
 }
 
-.offcanvas ul li {
-    margin: 20px 0;
-}
-
-.offcanvas ul li a {
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    font-weight: 400;
-    line-height: 1;
-    display: block;
-    text-decoration: none;
-    padding: 0 0 10% 15% ;
-    transition: all .4s ease;
-}
-
-.offcanvas ul li a:hover {
-    color: grey;
-}
-
-/* Show Offcanvas when active */
-.offcanvas.active {
-    right: 0;
-}
-
-.tg-btn {
-    position:absolute;
-    bottom:20px;
-    margin: 20px;
-    display: flex;
-    justify-content: bottom;
-    align-items: center;
-}
-
-.tg-btn img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-}
-.tg:hover img {
-    transform: scale(1.1);
-}
-
-.inst-btn {
-    position:absolute;
-    bottom:20px;
-    margin: 20px;
-    right:30%;
-    display: flex;
-    justify-content: bottom;
-    align-items: center;
-}
-
-.inst-btn img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-}
-.inst:hover img {
-    transform: scale(1.1);
+h1{
+    text-align:center;
+    color:white;
+    padding: 20% 50%;
 }
