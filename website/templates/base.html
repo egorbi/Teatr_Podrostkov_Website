@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8"/>
         <meta name = "viewport" content="width=device-width, initial-scale = 1" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}" />
         {% block styles %}{% endblock %}
         <title>{% block title %}Главная{% endblock %}</title>
@@ -12,7 +11,7 @@
     </head>
     <body>
         <div class="nav-line">
-            <img src="static/img/logo.png" style="height:70px;width:70px;">
+            <img src="static/img/logo.png" style="height:70px;width:70px;padding-top:10px; padding-left:10px;">
             <button class="menu-toggle" id="menuToggle">
             <span class="bar"></span>
             <span class="bar"></span>
