@@ -1,24 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
+    background-color: black;
+
+}
+.background_and_name{
+    padding-left: 0px;
     margin: 0;
     display:flex;
     justify-content: center;
     height: 100vh;
-
 }
-
-#background{
-    background-image: url(/static/img/main.jpg) !important;
+.background1{
+    background-image: url(/static/img/main.png) !important;
+    padding-left: 0px;
     height: 100vh;
     width:100%;
     background-size:cover;
     background-position: center center;
-    position:fixed;
+    position:;
     top:0;
     z-index: -1;
 }
 
+.img1{
+    background-image: url(/static/img/main1.png) !important;
+    padding-left: 0px;
+    height: 100vh;
+    width:100%;
+    background-size:cover;
+    background-position: center center;
+    position:;
+    top:0;
+    z-index: 2;
+}
+img2{
+    background-image: url(/static/img/main2.png) !important;
+    padding-left: 0px;
+    height: 100vh;
+    width:100%;
+    background-size:cover;
+    background-position: center center;
+    position:;
+    top:0;
+    z-index: -1;
+}
 .mptp-text ul{
+    padding: 0 0 10px 0;
+}
+
+.mptp-text2 ul{
     padding: 0 0 10px 0;
 }
 
@@ -27,8 +57,47 @@ body{
     text-align:center;
     justify-content:center;
     color:white;
-    padding-top:20%;
+    padding-top:25vh;;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 2.3vw;;
     z-index: 0;
     line-height:0.5;
+
+}
+
+.mptp-text2{
+    display:none;
+    visibility: collapse;
+
+}
+@media only screen and (max-width: 979px){
+    .mptp-text{
+        padding-top: 30vh;
+        font-size: 2.6vw;;
+    }
+}
+@media only screen and (max-width: 679px){
+    .mptp-text2{
+        display: inline;
+        visibility: visible;
+        position:absolute;
+        text-align:center;
+        justify-content:center;
+        color:white;
+        padding-top:30vh;;
+        font-family: Montserrat;
+        font-size: 5vw;;
+        z-index: 0;
+        line-height:0.5;
+    }
+    .mptp-text{
+        visibility: collapse;
+    }
+}
+
+.about1 {
+
+    background-color:black;
+    background-image:none !important;
+
+}

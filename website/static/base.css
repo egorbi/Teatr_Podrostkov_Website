@@ -132,5 +132,6 @@ body{
     width: 100%;
     background-color: black;
     height: 20%;
+    position:fixed;
 }
 
