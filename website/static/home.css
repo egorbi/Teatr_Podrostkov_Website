@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     background-color: black;
-
 }
 .background_and_name{
     padding-left: 0px;
@@ -24,23 +23,19 @@ body{
 
 .img1{
     background-image: url(/static/img/main1.png) !important;
-    padding-left: 0px;
     height: 100vh;
     width:100%;
     background-size:cover;
     background-position: center center;
-    position:;
     top:0;
-    z-index: 2;
+    z-index: 1;
 }
 img2{
     background-image: url(/static/img/main2.png) !important;
-    padding-left: 0px;
     height: 100vh;
     width:100%;
     background-size:cover;
     background-position: center center;
-    position:;
     top:0;
     z-index: -1;
 }
@@ -96,8 +91,73 @@ img2{
 }
 
 .about1 {
+    font-family: Montserrat;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 5vh;
+}
 
-    background-color:black;
-    background-image:none !important;
+.img-about1{
+    background-image: url(/static/img/img-about1.jpg) !important;
+    height: 70vh;
+    width:50vw;
+    background-size:cover;
+    background-position: center center;
+    float:left;
+}
 
+.about1 h2{
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 10vh;
+    padding-right: 10vw;
+    padding-left: 55vw;
+}
+
+.about2{
+    font-family: Montserrat;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.vadim_semenovich{
+    padding-left: 10vw;
+    padding-top:5vh;
+}
+
+.img-vs{
+    background-image: url(/static/img/vs.jpg) !important;
+    object-fit: cover;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+    border-radius:500px;
+    float:left;
+}
+.vadim_semenovich h2{
+    padding-left: 20vw;
+    padding-right: 10vw;
+}
+
+.shura{
+    padding-top: 20vh;
+    padding-right: 10vw;
+}
+
+.img-shura{
+    background-image: url(/static/img/Shura.jpg) !important;
+    object-fit: cover;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+    border-radius:500px;
+    float:right;
+}
+
+.shura h2{
+    padding-left: 20vw;
+    padding-right: 10vw;
 }

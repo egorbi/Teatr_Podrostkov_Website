@@ -3,6 +3,14 @@ body{
     margin:0;
 }
 
+.nav-line{
+    width: 100%;
+    background-color: black;
+    height: 10vh;
+    position:fixed;
+    z-index: 3;
+}
+
 .menu-toggle {
     position: fixed;
     top: 20px;
@@ -10,7 +18,7 @@ body{
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 3;
 }
 
 .menu-toggle .bar {
@@ -21,6 +29,8 @@ body{
     background-color: white;
     transition: 0.3s;
 }
+
+
 
 /* Transform bars for animation */
 .menu-toggle.active .bar:nth-child(1) {
@@ -33,6 +43,7 @@ body{
 
 .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
+
 }
 
 /* Offcanvas Navbar */
@@ -50,7 +61,7 @@ body{
     flex-direction: column;
     justify-content: top;
     align-items: space-between;
-    z-index:1;
+    z-index:2;
 }
 
 .offcanvas ul {
@@ -78,11 +89,6 @@ body{
 
 .offcanvas ul li a:hover {
     color: grey;
-}
-
-/* Show Offcanvas when active */
-.offcanvas.active {
-    right: 0;
 }
 
 .tg-btn {
@@ -128,10 +134,8 @@ body{
    padding: 0 7% 0 0;
 }
 
-.nav-line{
-    width: 100%;
-    background-color: black;
-    height: 20%;
-    position:fixed;
-}
 
+/* Show Offcanvas when active */
+.offcanvas.active {
+    right: 0;
+}
