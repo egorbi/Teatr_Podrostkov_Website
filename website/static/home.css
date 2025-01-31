@@ -57,12 +57,21 @@ img2{
     font-size: 2.3vw;;
     z-index: 0;
     line-height:0.5;
-
 }
 
 .mptp-text2{
     display:none;
     visibility: collapse;
+
+}
+
+.arrow{
+    position: absolute;
+    z-index:2;
+    bottom:2.5rem;
+    width:100%
+    display:flex;
+    justify-content:center;
 
 }
 @media only screen and (max-width: 979px){
@@ -96,23 +105,42 @@ img2{
     font-weight: 300;
     text-align: center;
     padding-top: 5vh;
-}
 
+}
+.about1_content{
+    padding-left:10vw;
+}
 .img-about1{
     background-image: url(/static/img/img-about1.jpg) !important;
     height: 70vh;
-    width:50vw;
+    width:30vw;
     background-size:cover;
     background-position: center center;
     float:left;
+
+}
+
+.about1 h1{
+    text-align:center;
 }
 
 .about1 h2{
-    text-align: center;
+   
+    padding: 5px;
+    text-align: left;
     line-height: 1.5;
-    padding-top: 10vh;
+    padding-top: 15vh;
     padding-right: 10vw;
-    padding-left: 55vw;
+    padding-left: 35vw;
+
+}
+
+.about1 h3{
+    text-align: right;
+    line-height: 1.5;
+    padding-top: 5vh;
+    padding-right: 10vw;
+    padding-left: 40vw;
 }
 
 .about2{

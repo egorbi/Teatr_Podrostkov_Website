@@ -7,4 +7,6 @@ views = Blueprint('views', __name__)
 def home():
     return render_template("home.html")
 
+def afisha():
+    return render_template("afisha.html")
 
